@@ -3,18 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Application</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <ul class="navigation">
-        <li><img src="https://thumbs.dreamstime.com/b/cat-kitten-white-background-26220873.jpg" height="250px"></li>
+        <li><img src="public/calico_cat.png" height="250px"></li>
         
-        <li><a href="main.html">♡ kitty happiness</a></li>
+        <li><a href="index.html">♡ kitty happiness</a></li>
         
-        <li><a href="videos.html">♡ videos </a></li>
+        <li><a href="video.html">♡ videos </a></li>
 
         <li><a href="application.html" target="_blank">♡ Send Application</a></li>
     </ul>
+    <br>
+    <br>
+    <div class="center">
+    <div class="container">
+  <form action="action_page.php">
+    <div class="label">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label">
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+    <label for="Service">Service</label>
+    <select id="Service" name="Service" class="Service">
+      <option value="Charlie">charlie - hugs</option>
+      <option value="Milo">milo - claw massages</option>
+      <option value="Seb">seb - kisses</option>
+      <option value="Muishy">muishy - hugs</option>
+    </select>
+
+    <label for="Extra">Extra wishes</label>
+    <textarea id="Extra" name="Extra" placeholder="Please write any extra wishes you might have... ˶ᵔ ᵕ ᵔ˶" style="height:200px"></textarea>
+
+    <button type="submit" class="btn btn-primary"><a href="submit.html">Submit!</a></button>
+
+  </form>
+</div>
+</div>
 </body>
 </html>
